@@ -4,7 +4,7 @@ export default function Home() {
 
       {/* HEADER */}
       <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <h1 style={{ color: "#1e40af" }}>🏠 বাসার সন্ধান</h1>
+        <h1 style={{ color: "#1e40af" }}>🏠 বাসা সন্ধান</h1>
         <nav style={{ display: "flex", gap: "15px" }}>
           <a href="#">Home</a>
           <a href="#">Houses</a>
