@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main style={{ padding: "20px", fontFamily: "Arial" }}>
-      
+
       {/* HEADER */}
       <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <h1 style={{ color: "#1e40af" }}>🏠 বাসার সন্ধান</h1>
@@ -35,6 +35,7 @@ export default function Home() {
               borderRadius: "8px"
             }}
           />
+
           <button
             style={{
               padding: "12px 20px",
@@ -52,20 +53,17 @@ export default function Home() {
       </section>
 
       {/* FEATURE SECTION */}
-      <section style={{ marginTop: "60px", display: "flex", gap: "20px", justifyContent: "center" }}>
-        
-        <div style={cardStyle}>
-          🏡 Verified Houses
-        </div>
-
-        <div style={cardStyle}>
-          📍 Map Based Search
-        </div>
-
-        <div style={cardStyle}>
-          💬 Direct Chat with Owner
-        </div>
-
+      <section
+        style={{
+          marginTop: "60px",
+          display: "flex",
+          gap: "20px",
+          justifyContent: "center"
+        }}
+      >
+        <div style={cardStyle}>🏡 Verified Houses</div>
+        <div style={cardStyle}>📍 Map Based Search</div>
+        <div style={cardStyle}>💬 Direct Chat with Owner</div>
       </section>
 
       {/* FOOTER */}
@@ -77,10 +75,11 @@ export default function Home() {
   );
 }
 
+/* ✅ FIXED STYLE OBJECT */
 const cardStyle: React.CSSProperties = {
   padding: "20px",
   border: "1px solid #ddd",
   borderRadius: "10px",
   width: "200px",
-  textAlign: "center"
+  textAlign: "center" as const
 };
