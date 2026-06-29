@@ -5,7 +5,6 @@ export default function Home() {
       {/* HEADER */}
       <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <h1 style={{ color: "#1e40af" }}>🏠 বাসার সন্ধান</h1>
-
         <nav style={{ display: "flex", gap: "15px" }}>
           <a href="#">Home</a>
           <a href="#">Houses</a>
@@ -18,7 +17,6 @@ export default function Home() {
         <h2 style={{ fontSize: "40px" }}>
           Find Your Perfect Home in Bangladesh
         </h2>
-
         <p style={{ color: "gray", marginTop: "10px" }}>
           Rent houses, flats, and rooms easily with verified owners
         </p>
@@ -35,7 +33,6 @@ export default function Home() {
               borderRadius: "8px"
             }}
           />
-
           <button
             style={{
               padding: "12px 20px",
@@ -75,11 +72,10 @@ export default function Home() {
   );
 }
 
-/* ✅ FIXED STYLE OBJECT */
 const cardStyle: React.CSSProperties = {
   padding: "20px",
   border: "1px solid #ddd",
   borderRadius: "10px",
   width: "200px",
-  textAlign: "center" as const
+  textAlign: "center",
 };
