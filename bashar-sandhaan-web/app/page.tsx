@@ -77,7 +77,7 @@ export default function Home() {
   );
 }
 
-const cardStyle = {
+const cardStyle: React.CSSProperties = {
   padding: "20px",
   border: "1px solid #ddd",
   borderRadius: "10px",
